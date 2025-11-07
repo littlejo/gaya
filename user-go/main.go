@@ -24,8 +24,7 @@ func main() {
         }
         ifaceName := os.Args[1]
 
-	//TOFIX
-        spec, err := ebpf.LoadCollectionSpec("/root/build-cache/debug/build/test-go-5087cbb7c8a26eb0/out/test-go-ebpf/bpfel-unknown-none/release/test-go")
+        spec, err := ebpf.LoadCollectionSpec("/tmp/test-go")
         if err != nil {
                 log.Fatalf("LoadCollectionSpec failed: %v", err)
         }
